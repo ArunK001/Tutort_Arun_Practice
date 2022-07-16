@@ -19,3 +19,12 @@ class Solution {
     }
 }
 
+class Solution_HigherOrderFunc {
+    func maximumWealth(_ accounts: [[Int]]) -> Int {
+        let newAr = accounts.compactMap({
+            $0.reduce(0, {$0 + $1})
+        })
+        
+        return newAr.max() ?? 0
+    }
+}
