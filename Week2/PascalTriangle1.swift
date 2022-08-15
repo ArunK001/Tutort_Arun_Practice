@@ -1,5 +1,5 @@
 class Solution {
-        func generate(_ numRows: Int) -> [[Int]] {
+    func generate(_ numRows: Int) -> [[Int]] {
         var array: [[Int]] = []
         array.append([1])
         
